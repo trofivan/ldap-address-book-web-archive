@@ -13,7 +13,7 @@
     "react-scripts": "1.1.0"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": ["prettier --single-quote --write", "git add"]
+    "src/**/*.{js,jsx,json,css}": ["prettier --config .prettierrc --write", "git add"]
   },
   "scripts": {
     "precommit": "lint-staged",
