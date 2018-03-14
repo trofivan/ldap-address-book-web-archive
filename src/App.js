@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import { Row, Col, Input } from 'antd';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+const Search = Input.Search;
+
+const App = () => (
+  <div className="App">
+    <Row>
+      <Col
+        xs={{ span: 22, offset: 1 }}
+        sm={{ span: 16, offset: 4 }}
+        lg={{ span: 10, offset: 7 }}
+      >
+        <Search placeholder="ФИО, должность или отдел" size="large" autoFocus />
+      </Col>
+    </Row>
+  </div>
+);
 
 export default App;
